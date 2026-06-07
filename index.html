@@ -1,44 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Mera Simple Card</title>
-    <style>
-        body {
-            background-color: lightgrey;
-        }
-        
-        /* Hamara Card Dabba */
-        .my-card {
-            background-color: white;  
-            width: 280px;             
-            padding: 20px;              
-            margin: 30px auto;         
-            border-radius: 15px;       
-            text-align: center;        
-        }
+/* Purane .my-button ke andar transition jodhna hai */
+.my-button {
+    background-color: blue;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    
+    /* 1. TRANSITION: Rang badalne mein 0.3 second ka samay lagega (smooth chalega) */
+    transition: background-color 0.3s ease; 
+}
 
-        .my-button {
-            background-color: blue;
-            color: white;
-            padding: 8px 15px;
-            text-decoration: none;      
-            border-radius: 5px;         
-            display: inline-block;
-        }
-    </style>
-</head>
-<body>
+/* 2. HOVER: Jab button par tap/hover karein, toh color dark blue ho jaye */
+.my-button:hover {
+    background-color: darkblue; 
+}
 
-    <!-- Ye hamari card ka dabba shuru hua -->
-    <div class="my-card">
-        <h2>Pushpraj Pandey</h2>
-        <p>..........</p>.</p>
-        <a href="#" class="my-button"><a href="https://github.com/chunmunpandey444-bit" class="my-button" target="_blank">Profile Dekhein</a>
-        </a>
-    </div>
-    <!-- Card ka dabba band -->
-
-</body>
-</html>
 
 

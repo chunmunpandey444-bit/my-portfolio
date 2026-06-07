@@ -1,20 +1,67 @@
-/* Purane .my-button ke andar transition jodhna hai */
-.my-button {
-    background-color: blue;
-    color: white;
-    padding: 8px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    
-    /* 1. TRANSITION: Rang badalne mein 0.3 second ka samay lagega (smooth chalega) */
-    transition: background-color 0.3s ease; 
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mera Profile Card</title>
+    <style>
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .profile-card {
+            background-color: white;
+            width: 300px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
 
-/* 2. HOVER: Jab button par tap/hover karein, toh color dark blue ho jaye */
-.my-button:hover {
-    background-color: darkblue; 
-}
+        /* Heading (Naam) ki styling */
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
 
+        p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
 
+        /* Blue Button ki styling aur transition effect */
+        .my-button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            font-weight: bold;
+            transition: background-color 0.3s ease; 
+        }
 
+        .my-button:hover {
+            background-color: darkblue; 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ye aapka asli dabba (card) hai jo screen par dikhega -->
+    <div class="profile-card">
+        <h1>Pushpraj Pandey</h1>
+        <p>BCA Student | Learning HTML, CSS & JavaScript to build awesome web apps.</p>
+        
+        <!-- Button par tap karte hi aapki GitHub profile naye page par khulegi -->
+        <a href="https://github.com/chunmunpandey444-bit" class="my-button" target="_blank">Profile Dekhein</a>
+    </div>
+
+</body>
+</html>

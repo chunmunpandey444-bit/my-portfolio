@@ -12,7 +12,7 @@ Welcome to my repository! This is my very first step into the world of **Fronten
 ---
 
 ## 🛠️ Tools Used:
-* **Code Editor:** Spck Code Editor (Android)
+* **Code Editor:** vs code
 * **Version Control:** GitHub Website (Mobile Desktop Version)
 * **Learning Source:** Sheryians Coding School (YouTube)
 

@@ -1,66 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Mera Profile Card</title>
-    <style>
-        body {
-            background-color: #f0f2f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .profile-card {
-            background-color: white;
-            width: 300px;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        
-        h1 {
-            color: #333;
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            color: #666;
-            font-size: 16px;
-            line-height: 1.5;
-            margin-bottom: 20px;
-        }
-
-        .my-button {
-            background-color: blue;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            font-weight: bold;
-            transition: background-color 0.3s ease; 
-        }
-
-        .my-button:hover {
-            background-color: darkblue; 
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM & Input Practice</title>
 </head>
 <body>
 
-    
-    <div class="profile-card">
-        <h1>Pushpraj Pandey</h1>
-        <p>BCA Student | Learning HTML, CSS & JavaScript to build awesome web apps.</p>
-        
-        <!-- Button par tap karte hi aapki GitHub profile naye page par khulegi -->
-        <a href="https://github.com/chunmunpandey444-bit" class="my-button" target="_blank">Profile Dekhein</a>
-    </div>
+    <!-- Section 1: Counter App -->
+    <h1>My Counter App</h1>
+    <h2 id="counter-value">0</h2>
+    <button id="increment-btn">Increase (+)</button>
+    <button id="decrement-btn">Decrease (-)</button>
+    <button id="reset-btn">Reset</button>
 
+    <hr>
+
+    <!-- Section 2: Input Greeting App -->
+    <h1 id="greeting-msg">Enter your name below:</h1>
+    <input type="text" id="user-name" placeholder="Type name here...">
+    <button id="submit-btn">Greet Me</button>
+
+    <script src="script.js"></script>
 </body>
 </html>

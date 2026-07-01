@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript DOM & Input Practice</title>
+    <title>Simple Calculator</title>
 </head>
 <body>
 
-    <!-- Section 1: Counter App -->
-    <h1>My Counter App</h1>
-    <h2 id="counter-value">0</h2>
-    <button id="increment-btn">Increase (+)</button>
-    <button id="decrement-btn">Decrease (-)</button>
-    <button id="reset-btn">Reset</button>
-
-    <hr>
-
-    <!-- Section 2: Input Greeting App -->
-    <h1 id="greeting-msg">Enter your name below:</h1>
-    <input type="text" id="user-name" placeholder="Type name here...">
-    <button id="submit-btn">Greet Me</button>
+    <h1>BCA Simple Calculator</h1>
+    
+    <!-- Input Boxes -->
+    <input type="number" id="num1" placeholder="First Number">
+    <input type="number" id="num2" placeholder="Second Number">
+    
+    <br><br>
+    
+    <!-- All 4 Operation Buttons -->
+    <button id="add-btn">Add (+)</button>
+    <button id="sub-btn">Subtract (-)</button>
+    <button id="multiply-btn">Multiply (*)</button>
+    <button id="divide-btn">Divide (/)</button>
+    
+    <!-- Result Heading -->
+    <h2 id="calc-result">Result: 0</h2>
 
     <script src="script.js"></script>
 </body>

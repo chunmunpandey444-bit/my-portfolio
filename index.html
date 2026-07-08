@@ -3,26 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Calculator</title>
+    <title>Live Weather App | Pushpraj Portfolio</title>
+    <!-- Google Fonts for premium typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons for weather symbols -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>BCA Simple Calculator</h1>
-    
-    <!-- Input Boxes -->
-    <input type="number" id="num1" placeholder="First Number">
-    <input type="number" id="num2" placeholder="Second Number">
-    
-    <br><br>
-    
-    <!-- All 4 Operation Buttons -->
-    <button id="add-btn">Add (+)</button>
-    <button id="sub-btn">Subtract (-)</button>
-    <button id="multiply-btn">Multiply (*)</button>
-    <button id="divide-btn">Divide (/)</button>
-    
-    <!-- Result Heading -->
-    <h2 id="calc-result">Result: 0</h2>
+    <div class="weather-container">
+        <!-- 1. Search Box Component -->
+        <div class="search-box">
+            <i class="fa-solid : opacity-50 fa-location-dot"></i>
+            <input type="text" id="city-input" placeholder="Enter city name (e.g., Ghazipur)...">
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <!-- 2. Weather Display Section (Jo data aane par update hoga) -->
+        <div class="weather-info" id="weather-info">
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" id="weather-icon" alt="Weather Status">
+            <h1 id="temperature">--°C</h1>
+            <p id="description">Search a city to get updates</p>
+            <h2 id="city-name">City Name</h2>
+        </div>
+
+        <!-- 3. Advanced Extra Metrics Component -->
+        <div class="weather-details">
+            <div class="col">
+                <i class="fa-solid fa-droplet"></i>
+                <div>
+                    <p id="humidity">--%</p>
+                    <span>Humidity</span>
+                </div>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-wind"></i>
+                <div>
+                    <p id="wind-speed">-- km/h</p>
+                    <span>Wind Speed</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

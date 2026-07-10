@@ -3,50 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live Weather App | Pushpraj Portfolio</title>
-    <!-- Google Fonts for premium typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome Icons for weather symbols -->
+    <title>Pushpraj pandey | Professional full-stack developer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for premium tech icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+     <!-- 1. Navigation bar -->
+      <nav class="navbar">
+        <div class="logo">Pushpraj pandey<span>.dev</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>   
+      </nav>
 
-    <div class="weather-container">
-        <!-- 1. Search Box Component -->
-        <div class="search-box">
-            <i class="fa-solid : opacity-50 fa-location-dot"></i>
-            <input type="text" id="city-input" placeholder="Enter city name (e.g., Ghazipur)...">
-            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </div>
-
-        <!-- 2. Weather Display Section (Jo data aane par update hoga) -->
-        <div class="weather-info" id="weather-info">
-            <img src="https://openweathermap.org/img/wn/10d@2x.png" id="weather-icon" alt="Weather Status">
-            <h1 id="temperature">--°C</h1>
-            <p id="description">Search a city to get updates</p>
-            <h2 id="city-name">City Name</h2>
-        </div>
-
-        <!-- 3. Advanced Extra Metrics Component -->
-        <div class="weather-details">
-            <div class="col">
-                <i class="fa-solid fa-droplet"></i>
-                <div>
-                    <p id="humidity">--%</p>
-                    <span>Humidity</span>
-                </div>
+       <!-- 2. Hero section -->
+      <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h3>Hello, I'm Pushpraj pandey</h3>
+            <h1>pushpraj pandey</h1>
+            <h3>And i'm a <span class="text-animate">Full-stack Developer</span></h3>
+            <p>I build high-performance, dynamic web applications using modern technologies. Welcome to my portfolio!</p>
+            <div class="social-icons">
+                <a href="https://github.com/chunmunpandey444-bit" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pushpraj-pandey-339462408" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <div class="col">
-                <i class="fa-solid fa-wind"></i>
-                <div>
-                    <p id="wind-speed">-- km/h</p>
-                    <span>Wind Speed</span>
-                </div>
-            </div>
+            <a href="#Projects" class="btn">View My Work</a>
         </div>
-    </div>
+         </section>
+              <!-- 3. skills section -->
+        <section id="skills" class="skills-section">
+            <h2 class="heading">my <span>Skills</span></h2>
+            <div class="skills-container">
+                <div class="skill-box"><i class="fa-brands : opacity-50 fa-html15"></i><p>HTML5</p></div>
+                <div class="skill-box"><i class="fa-brands : opacity-50 fa-css3-alt"></i><p>CSS3</p></div>
+                <div class="skill-box"><i class="fa-brands : opacity-50 fa-js"></i><p>JavaScript</p></div>
+                <div class="skill-box"><i class="fa-solid  fa-code-branch"></i><p>Git & GitHub</p></div>
+                </div>
+            </section>
+            Projects Hub Showcase Section -->
+    <section id="projects" class="projects-section">
+        <h2 class="heading">My <span>Projects</span></h2>
+        <div class="projects-grid">
+            
+            <!-- Project 1: Calculator -->
+            <div class="project-card">
+                <i class="fa-solid fa-calculator card-icon"></i>
+                <h3>Interactive Calculator</h3>
+                <p>A sleek, functional grid-based calculator with real-time operations.</p>
+                <a href="https://chunmunpandey444-bit.github.io/Pushpraj_pandey/" target="_blank" class="project-link">Open Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
 
-    <script src="script.js"></script>
+            <!-- Project 2: Weather App -->
+            <div class="project-card">
+                <i class="fa-solid fa-cloud-sun card-icon"></i>
+                <h3>Live Weather App</h3>
+                <p>Fetches global atmospheric metrics using OpenWeatherMap API fetching.</p>
+                <a href="https://chunmunpandey444-bit.github.io/weather.update/" target="_blank" class="project-link">Open Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+
+            <!-- Project 3: Digital Clock -->
+            <div class="project-card">
+                <i class="fa-solid fa-clock card-icon"></i>
+                <h3>Dynamic Clock</h3>
+                <p>A continuous time rendering interface with smooth intervals.</p>
+                <a href="https://chunmunpandey444-bit.github.io/Todo-app/" target="_blank" class="project-link">Open Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+
+        </div>
+    </section>
+     
+    <!-- 4. About section -->
+    <section id="about" class="about-section">
+        <h2 class="heading">About <span>Me</span></h2>
+        <p>​I am a highly motivated Full-Stack Web Developer with a strong passion for continuous learning and problem-solving. My core strengths lie in building clean, dynamic, and interactive user interfaces using modern JavaScript, HTML5, and CSS3. I don't just write code; I focus on creating smooth user experiences and robust logical systems.
+​What sets me apart is my disciplined work ethic and dedication to hands-on development. I am a firm believer in execution, which is why I consistently build real-world applications—including interactive grid calculators, dynamic API-driven weather systems, and continuous real-time rendering digital interfaces. I thrive on catching runtime console errors and converting bugs into clean solutions.
+​I am always proactive, ready to step out of my comfort zone, and highly eager to contribute to industry-level web development projects and dynamic technical internships.</p>
+    </section>
+    <!-- 5. Contact section -->
+    <section id="contact" class="phone-no 8948500145">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <p>If you have any questions or want to collaborate, feel free to reach out!</p>
+        <div class="contact-info">
+            <p><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:chunumupandey444@gmail.com">chunumupandey444@gmail.com</a></p>
+            <p><i class="fa-solid fa-phone"></i> Phone: <a href="tel:8948500145">8948500145</a></p>
+        </div>
+    </section>
+    <!-- 6. cv-section-->
+    <section id="cv" class="cv-section">
+        <h2 class="heading">Download <span>My CV</span></h2>
+        <p>Feel free to download my resume to learn more about my experience and skills.</p>
+                <a href=""C:\Users\USER\Documents\Custom Office Templates\cv.pdf"" target="_blank" class="cv-link">Download CV <i class="fa-solid fa-download"></i></a>
+            </section>
+
+        </div>
+    </section>
 </body>
 </html>

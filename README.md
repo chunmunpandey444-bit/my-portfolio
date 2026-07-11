@@ -13,13 +13,13 @@ Welcome to my repository! This is my very first step into the world of **Fronten
 
 ## 🛠️ Tools Used:
 * **Code Editor:** vs code
-* **Version Control:** GitHub Website (Mobile Desktop Version)
+* **Version Control:** GitHub Website 
 * **Learning Source:** Sheryians Coding School (YouTube)
 
 ---
 
-## 🎯 My Future Targets:
-- [x] HTML & CSS Basics
+## 🎯 
+- [] HTML & CSS Basics
 - [ ] CSS Advanced (Flexbox, Grid, Media Queries)
 - [ ] Tailwind CSS
 - [ ] JavaScript Basics & DOM Manipulation
